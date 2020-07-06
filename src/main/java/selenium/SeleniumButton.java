@@ -3,6 +3,10 @@ package selenium;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.Status;
+
+import logger.Reporter;
+
 public class SeleniumButton {
 
 	private static String currentMethod;
@@ -16,14 +20,10 @@ public class SeleniumButton {
 			SeleniumWait.waitElementClickable(element);
 			SeleniumJavascript.highlightElement(element);
 
+			Reporter.addLog(Status.INFO, currentMethod + " -> " + element.getAttribute("id"));
 			element.click();
-			/*
-			 * Reporter.addStepsToPassMarkup("(" + ExtensionMethods.endDateTime() +
-			 * ") - TEST PASSED " + antecessor + currentMethod + "- Element <b>[" +
-			 * ElementHelpers.getAttributeElement(element) +
-			 * "]</b> is visible in page and contains text: <b> [" + text + "]</b>",
-			 * ExtentColor.GREEN);
-			 */
+		
+			 
 		} catch (Throwable e) {
 			Assert.fail("Test '" + antecessor + "' ended with ERROR - Method '" + currentMethod
 					+ "' Expected result message:  not present in element. \n<p>Stacktrace: "

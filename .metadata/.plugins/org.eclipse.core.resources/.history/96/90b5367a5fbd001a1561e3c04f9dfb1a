@@ -1,0 +1,49 @@
+package constants;
+
+public class EnvironmentConfigurations {
+
+	private void setEnvironment() {
+		
+		
+		environment
+		
+		if (environment.equalsIgnoreCase("homol")) {
+
+			urlBase = prop.getProperty("unicom.url.homol");
+			username = prop.getProperty("unicom.username");
+			String passBase64 = prop.getProperty("unicom.password");
+			password= Base64Encryption.decodedString(passBase64);
+			
+			dbConn = prop.getProperty("unicom.dbconn.homol");
+			dbUser = prop.getProperty("unicom.dbuser.homol");
+			dbPass = prop.getProperty("unicom.dbpass.homol");
+			
+
+		} else if (environment.equalsIgnoreCase("dev")) {
+			
+			urlBase = prop.getProperty("unicom.url.dev");
+			username = prop.getProperty("unicom.username");
+			String passBase64 = prop.getProperty("unicom.password");
+			password= Base64Encryption.decodedString(passBase64);
+			
+			dbConn = prop.getProperty("unicom.dbconn.dev");
+			dbUser = prop.getProperty("unicom.dbuser.dev");
+			dbPass = prop.getProperty("unicom.dbpass.dev");
+
+		} else if (environment.equalsIgnoreCase("weblogic")) {
+			urlBase = prop.getProperty("unicom.url.weblogic");
+			username = prop.getProperty("unicom.username");
+			String passBase64 = prop.getProperty("unicom.password");
+			password= Base64Encryption.decodedString(passBase64);
+			
+			dbConn = prop.getProperty("unicom.dbconn.weblogic");
+			dbUser = prop.getProperty("unicom.dbuser.weblogic");
+			dbPass = prop.getProperty("unicom.dbpass.weblogic");
+
+		}
+
+		else {
+			new Exception("Invalid environment");
+		}
+	}
+}

@@ -9,6 +9,7 @@ import utilities.ProjectHelpers;
 
 public class LoadConfigurations {
 
+	//Metodo para retornar as propriedades setados no arquivo .properties
 	public static Properties getProperties() {
 
         Properties prop = new Properties();

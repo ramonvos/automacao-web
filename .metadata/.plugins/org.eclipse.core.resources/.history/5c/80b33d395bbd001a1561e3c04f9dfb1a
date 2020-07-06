@@ -1,0 +1,8 @@
+#BROWSER CONFIG
+browserName=CHROME
+driverVersion=83
+headlessDriver=FALSE
+
+#ENVIRONMENT CONFIG
+environment=PROD
+urlBaseProd=www.americanas.com.br

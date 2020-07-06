@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\1680395\AppData\Local\Temp\testng-eclipse-1840115457\testng-customsuite.xml</span>
+                    <span>C:\Users\1680395\AppData\Local\Temp\testng-eclipse--402321453\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.Testar" hash-for-method="iniciarUmtest">iniciarUmtest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.SUT001_AmericanasPurchaseListTests" hash-for-method="TC001_FindProduct">TC001_FindProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.SUT001_AmericanasPurchaseListTests" hash-for-method="TC002_FindAndBuyProduct">TC002_FindAndBuyProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.SUT001_AmericanasPurchaseListTests" hash-for-method="TC002_FindAndSelectProduct">TC002_FindAndSelectProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +130,34 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.Testar</span>
+              <span class="class-name">tests.SUT001_AmericanasPurchaseListTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="iniciarUmtest">
-                  </a> <!-- iniciarUmtest -->
-                  <span class="method-name">iniciarUmtest</span>
+                  <a name="TC001_FindProduct">
+                  </a> <!-- TC001_FindProduct -->
+                  <span class="method-name">TC001_FindProduct</span>
+                  <em>
+(Realizar uma busca na página principal e verificar se foi exibido o produto informando.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_FindAndBuyProduct">
+                  </a> <!-- TC002_FindAndBuyProduct -->
+                  <span class="method-name">TC002_FindAndBuyProduct</span>
+                  <em>
+(Realizar uma busca na página principal, adicionar no carrinho e clicar em comprar.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_FindAndSelectProduct">
+                  </a> <!-- TC002_FindAndSelectProduct -->
+                  <span class="method-name">TC002_FindAndSelectProduct</span>
+                  <em>
+(Realizar uma busca na página principal e adicionar o produto ao carrinho.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,7 +165,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\1680395\AppData\Local\Temp\testng-eclipse-1840115457\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\1680395\AppData\Local\Temp\testng-eclipse--402321453\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -144,7 +174,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.Testar&quot;/&gt;
+      &lt;class name=&quot;tests.SUT001_AmericanasPurchaseListTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -184,16 +214,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'iniciarUmtest')
-data.setCell(0, 2, 'tests.Testar')
-data.setCell(0, 3, 4);
+data.setCell(0, 1, 'TC001_FindProduct')
+data.setCell(0, 2, 'tests.SUT001_AmericanasPurchaseListTests')
+data.setCell(0, 3, 10112);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC002_FindAndSelectProduct')
+data.setCell(1, 2, 'tests.SUT001_AmericanasPurchaseListTests')
+data.setCell(1, 3, 6656);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC002_FindAndBuyProduct')
+data.setCell(2, 2, 'tests.SUT001_AmericanasPurchaseListTests')
+data.setCell(2, 3, 6207);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 ms</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,26 +257,50 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.Testar</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SUT001_AmericanasPurchaseListTests</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initializeDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">12589 ms</span>
+                <span class="method-name">beforeMethod(public void tests.SUT001_AmericanasPurchaseListTests.TC001_FindProduct(), org.testng.TestRunner@d787...)</span>
+                <span class="method-start">5460 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">iniciarUmtest</span>
-                <span class="method-start">12589 ms</span>
+                <span class="method-name">TC001_FindProduct</span>
+                <span class="method-start">5464 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">12595 ms</span>
+                <span class="method-name">afterMethod([TestResult name=TC001_FindProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC001_Fi...)</span>
+                <span class="method-start">15580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndBuyProduct(), org.testng.TestRunne...)</span>
+                <span class="method-start">16253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC002_FindAndBuyProduct</span>
+                <span class="method-start">16253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC002_FindAndBuyProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC...)</span>
+                <span class="method-start">22464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndSelectProduct(), org.testng.TestRu...)</span>
+                <span class="method-start">22840 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC002_FindAndSelectProduct</span>
+                <span class="method-start">22840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=TC002_FindAndSelectProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests...)</span>
+                <span class="method-start">29496 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">12630 ms</span>
+                <span class="method-start">29922 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

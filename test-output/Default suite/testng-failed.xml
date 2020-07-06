@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.Testar">
+      <class name="tests.SUT001_AmericanasPurchaseListTests">
         <methods>
           <include name="beforeMethod"/>
           <include name="initializeDriver"/>
+          <include name="TC002_FindAndSelectProduct"/>
           <include name="quitDriver"/>
           <include name="afterMethod"/>
-          <include name="iniciarUmtest"/>
         </methods>
-      </class> <!-- tests.Testar -->
+      </class> <!-- tests.SUT001_AmericanasPurchaseListTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

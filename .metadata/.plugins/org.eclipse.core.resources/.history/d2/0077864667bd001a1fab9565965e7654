@@ -1,0 +1,11 @@
+package selenium;
+
+import org.openqa.selenium.WebElement;
+
+public class SeleniumTextbox {
+
+	
+	public static void setText(WebElement element, String text) {
+		
+	}
+}

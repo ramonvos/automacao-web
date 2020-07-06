@@ -1,0 +1,7 @@
+--Brow
+browserName=CHROME
+driverVersion=83
+
+--Environment
+environment=PROD
+urlBaseProd=www.americanas.com.br

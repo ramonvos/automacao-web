@@ -1,0 +1,7 @@
+package constants;
+
+public class Constants {
+
+	
+	public  static final String pathToChromedriver = FileHelpers.getCurrentProjectPath()+"\\src\\main\\java\\drivers\\Chrome\\Versions\\";
+}

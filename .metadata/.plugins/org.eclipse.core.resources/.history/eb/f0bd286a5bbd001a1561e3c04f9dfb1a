@@ -1,0 +1,11 @@
+#BROWSER CONFIG
+browserName=CHROME
+driverVersion=83
+headlessDriver=FALSE
+
+#ENVIRONMENT CONFIG
+environment=PROD
+userName=
+passWord=
+urlBaseProd=www.americanas.com.br
+urlBaseLocal=localhost:8080

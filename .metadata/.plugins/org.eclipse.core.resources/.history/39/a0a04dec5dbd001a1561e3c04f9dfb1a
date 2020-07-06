@@ -1,0 +1,104 @@
+package base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+import constants.Constants;
+import constants.LoadConfigurations;
+import enums.Browser;
+
+public class TestBase {
+
+	public static Properties prop;
+	private WebDriver driver;
+	private String browser;
+
+	public TestBase() {
+
+		if (prop == null) {
+			prop = LoadConfigurations.getProperties();
+
+		}
+
+	}
+
+	// Executado uma vez antes de iniciar os testes
+	@BeforeSuite
+	public void initializeDriver() {
+
+		browser = prop.getProperty("default.browser");
+		remoteDriver = Boolean.parseBoolean(prop.getProperty("driver.remote"));
+		try {
+			if (browser.equals(Browser.CHROME.toString())) {
+				driver = getChromeDriver();
+			} else if (browser.equals(Browser.FIREFOX.toString())) {
+				driver = getFirefoxDriver();
+
+			} else if (browser.equals(Browser.IE.toString())) {
+				driver = getIEDriver();
+
+			} else if (browser.equals(Browser.EDGE.toString())) {
+				getEdgeDriver();
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		Reporter.createNewReport();
+		driver.navigate().to(urlBase);
+
+	}
+
+	//// Executado uma vez após o ultimo teste
+	@AfterSuite
+	public void quitDriver() {
+		driver.quit();
+	}
+
+	// Executado antes de cada teste apos iniciar a suite
+	@BeforeMethod
+	public void beforeMethod() {
+
+	}
+
+	// Executado apos cada teste apos iniciar a suite
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod() {
+
+	}
+
+	private WebDriver getChromeDriver() {
+
+		System.setProperty("webdriver.chrome.driver",
+				Constants.pathToChromedriver + prop.getProperty("driverVersion") 
+				+ "\\chromedriver.exe");
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+
+		// Ler o arquivo de propriedades e verificar se o parametro headlessDriver está
+		// true
+		if (prop.getProperty("headlessDriver").equals("TRUE")) {
+			options.addArguments("--headless");
+		}
+		driver = new ChromeDriver(options);
+		return driver;
+	}
+
+	public String takeScreenshot() {
+
+		String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+
+		return screenshotBase64;
+
+	}
+}

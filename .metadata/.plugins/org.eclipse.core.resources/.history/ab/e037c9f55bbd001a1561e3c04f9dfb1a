@@ -1,0 +1,59 @@
+package base;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+public class TestBase {
+	
+	private  WebDriver driver;
+	private 
+	
+	
+
+	//Executado uma vez antes de iniciar os testes
+	@BeforeSuite
+	public void initializeDriver() {
+	
+		
+		driver = new ChromeDriver();
+		
+		
+	}
+	
+	////Executado uma vez após o ultimo teste
+	@AfterSuite
+	public void quitDriver() {
+		driver.quit();
+	}
+	
+	//Executado antes de cada teste apos iniciar a suite
+	@BeforeMethod
+	public void beforeMethod() {
+		
+	}
+
+	//Executado apos cada teste apos iniciar a suite
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod(){
+		
+	}
+	
+	private WebDriver getChromeDriver() {
+		
+		System.setProperty("webdriver.chrome.driver", Constants.pathToChromedriver);
+	}
+	
+	public String takeScreenshot() {
+
+		String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+		
+		return screenshotBase64;
+
+	}
+}

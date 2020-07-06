@@ -1,33 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+  <suite name="Default suite" duration-ms="24456" started-at="2020-07-06T16:03:25Z" finished-at="2020-07-06T16:03:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
-      <class name="tests.Testar">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:tests.Testar@5f058f00]" name="initializeDriver" is-config="true" duration-ms="12556" started-at="2020-07-03T19:11:34Z" finished-at="2020-07-03T19:11:46Z">
+    <test name="Default test" duration-ms="24456" started-at="2020-07-06T16:03:25Z" finished-at="2020-07-06T16:03:49Z">
+      <class name="tests.SUT001_AmericanasPurchaseListTests">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="initializeDriver" is-config="true" duration-ms="5440" started-at="2020-07-06T16:03:19Z" finished-at="2020-07-06T16:03:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="iniciarUmtest()[pri:0, instance:tests.Testar@5f058f00]" name="iniciarUmtest" duration-ms="4" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- iniciarUmtest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.Testar@5f058f00]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2020-07-06T16:03:25Z" finished-at="2020-07-06T16:03:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC001_FindProduct()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@d78795]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Testar@5f058f00]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+        <test-method status="PASS" signature="TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC001_FindProduct" duration-ms="10112" started-at="2020-07-06T16:03:25Z" description="Realizar uma busca na página principal e verificar se foi exibido o produto informando." finished-at="2020-07-06T16:03:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC001_FindProduct -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="673" started-at="2020-07-06T16:03:35Z" finished-at="2020-07-06T16:03:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC001_FindProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC001_FindProduct()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.Testar@5f058f00]" name="quitDriver" is-config="true" duration-ms="684" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:47Z">
+        <test-method status="PASS" signature="TC002_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC002_FindAndBuyProduct" duration-ms="6207" started-at="2020-07-06T16:03:36Z" description="Realizar uma busca na página principal, adicionar no carrinho e clicar em comprar." finished-at="2020-07-06T16:03:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_FindAndBuyProduct -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-06T16:03:36Z" finished-at="2020-07-06T16:03:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndBuyProduct()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@d78795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="376" started-at="2020-07-06T16:03:42Z" finished-at="2020-07-06T16:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_FindAndBuyProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC002_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndBuyProduct()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="TC002_FindAndSelectProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC002_FindAndSelectProduct" duration-ms="6656" started-at="2020-07-06T16:03:42Z" description="Realizar uma busca na página principal e adicionar o produto ao carrinho." finished-at="2020-07-06T16:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002_FindAndSelectProduct -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-06T16:03:42Z" finished-at="2020-07-06T16:03:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndSelectProduct()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@d78795]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="396" started-at="2020-07-06T16:03:49Z" finished-at="2020-07-06T16:03:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC002_FindAndSelectProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC002_FindAndSelectProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC002_FindAndSelectProduct()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="quitDriver" is-config="true" duration-ms="835" started-at="2020-07-06T16:03:49Z" finished-at="2020-07-06T16:03:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-      </class> <!-- tests.Testar -->
+      </class> <!-- tests.SUT001_AmericanasPurchaseListTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

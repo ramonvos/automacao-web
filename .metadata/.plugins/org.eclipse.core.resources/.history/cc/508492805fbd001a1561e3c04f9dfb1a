@@ -1,0 +1,147 @@
+package base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+
+import constants.Constants;
+import constants.LoadConfigurations;
+import enums.Browser;
+import enums.Environment;
+
+public class TestBase {
+
+	public static Properties prop;
+	public static String urlBase;
+	
+	private WebDriver driver;
+	private String browser;
+
+	public TestBase() {
+
+		if (prop == null) {
+			prop = LoadConfigurations.getProperties();
+
+		}
+		
+
+	}
+
+	// Executado uma vez antes de iniciar os testes
+	@BeforeSuite
+	public void initializeDriver() {
+
+		browser = prop.getProperty("browserName");// Ler o browser setado no arquivo de propriedades
+
+		try {
+			if (browser.equals(Browser.CHROME.toString())) {
+				driver = getChromeDriver();
+			} else if (browser.equals(Browser.FIREFOX.toString())) {
+				driver = getFirefoxDriver();
+
+			} else if (browser.equals(Browser.IE.toString())) {
+				driver = getIEDriver();
+			}
+				else {
+					new Exception("Invalid Browser");
+				}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		driver.navigate().to(urlBase);
+
+	}
+
+	//// Executado uma vez após o ultimo teste
+	@AfterSuite
+	public void quitDriver() {
+		driver.quit();
+	}
+
+	// Executado antes de cada teste apos iniciar a suite
+	@BeforeMethod
+	public void beforeMethod() {
+
+	}
+
+	// Executado apos cada teste apos iniciar a suite
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod() {
+
+	}
+
+	private WebDriver getChromeDriver() {
+
+		System.setProperty("webdriver.chrome.driver",
+				Constants.pathToChromedriver + prop.getProperty("driverVersion") + "\\chromedriver.exe");
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--start-maximized");
+
+		// Ler o arquivo de propriedades e verificar se o parametro headlessDriver está
+		// true
+		if (prop.getProperty("headlessDriver").equals("TRUE")) {
+			options.addArguments("--headless");
+		}
+		driver = new ChromeDriver(options);
+		return driver;
+	}
+
+	private WebDriver getFirefoxDriver() {
+
+		System.setProperty("webdriver.gecko.driver",
+				Constants.pathToFirefoxdriver + prop.getProperty("driverVersion") + "\\geckodriver.exe");
+
+		driver = new FirefoxDriver();
+		return driver;
+	}
+
+	private WebDriver getIEDriver() {
+
+		System.setProperty("webdriver.ie.driver",
+				Constants.pathToIEdriver + prop.getProperty("driverVersion") + "\\IEDriverServer.exe");
+
+		driver = new InternetExplorerDriver();
+		return driver;
+	}
+
+	public String takeScreenshot() {
+
+		String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BASE64);
+
+		return screenshotBase64;
+
+	}
+	private void setEnvironment(){
+		
+		String environment = prop.getProperty("environment");
+		
+		if(environment.equals(Environment.PROD)) {
+			urlBase =  prop.getProperty("urlBaseProd");
+		} else if(environment.equals(Environment.DEV)) {
+			urlBase =  prop.getProperty("urlBaseDev");
+		}
+		else if(environment.equals(Environment.HOMOL)) {
+			urlBase =  prop.getProperty("urlBaseHomol");
+		}
+		else if(environment.equals(Environment.LOCALHOST)) {
+			urlBase =  prop.getProperty("urlBaseLocal");
+		}
+		else {
+			new Exception("Invalid Enviroment");
+		}
+			
+	}
+}

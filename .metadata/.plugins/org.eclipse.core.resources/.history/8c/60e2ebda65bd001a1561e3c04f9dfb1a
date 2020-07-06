@@ -1,0 +1,16 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import base.TestBase;
+import pages.americanas.AmericanasHomePage;
+
+public class Testar extends TestBase {
+
+	
+	@Test
+	public void iniciarUmtest() {
+		
+		new AmericanasHomePage(driver).setTextOnFindBar("");
+	}
+}
