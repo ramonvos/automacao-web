@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="40" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+      <class name="tests.Testar">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:tests.Testar@5f058f00]" name="initializeDriver" is-config="true" duration-ms="12556" started-at="2020-07-03T19:11:34Z" finished-at="2020-07-03T19:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="iniciarUmtest()[pri:0, instance:tests.Testar@5f058f00]" name="iniciarUmtest" duration-ms="4" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciarUmtest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.Testar@5f058f00]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.Testar@5f058f00]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.Testar@5f058f00]" name="quitDriver" is-config="true" duration-ms="684" started-at="2020-07-03T19:11:46Z" finished-at="2020-07-03T19:11:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- tests.Testar -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
