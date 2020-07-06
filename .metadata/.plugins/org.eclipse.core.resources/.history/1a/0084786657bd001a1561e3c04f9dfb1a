@@ -1,8 +1,0 @@
-package logger;
-
-public class Reporter {
-
-	public static ExtentReports extent;
-	public static ExtentTest test;
-	
-}
