@@ -1,11 +1,11 @@
-	# Desafio automação web com Selenium e Java (E-commerce)
+# Desafio automação web com Selenium e Java (E-commerce)
 
-	## Requirements
+## Requirements
 
 	Environment Windows
 	Google chrome installed -- version 80 +
 
-	## Project structure
+## Project structure
 
 	.
 	├── ...
@@ -22,7 +22,7 @@
 	│   ├── tests      # Automated Tests
 	└── ...
 
-	## HOW TO RUN 
+## HOW TO RUN 
 
 
 	Clone projet:
@@ -39,7 +39,8 @@
 
 	> **Note:** The **Logger html file** is saved in the folder [user-dir]\automacao-web\report.
 
-	## Log example (Extent Reports)
+
+## Log example (Extent Reports)
 	
 	 
 Reporter 
