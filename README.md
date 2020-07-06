@@ -41,5 +41,5 @@
 
 	## Log example (Extent Reports)
 	
-	 ![Reporter](https://imgur.com/m6il5ne)
+	 ![Reporter](https://i.imgur.com/m6il5ne.png)
 
