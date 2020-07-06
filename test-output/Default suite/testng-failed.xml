@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="initializeDriver"/>
-          <include name="TC002_FindAndSelectProduct"/>
+          <include name="TC003_FindAndBuyProduct"/>
           <include name="quitDriver"/>
           <include name="afterMethod"/>
         </methods>

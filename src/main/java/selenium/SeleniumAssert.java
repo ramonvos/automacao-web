@@ -33,5 +33,26 @@ public class SeleniumAssert {
 
 		}
 	}
+	public static void assertElementIsVisible(WebElement element) {
+		
+		// Metodos 
+		currentMethod = Thread.currentThread().getStackTrace()[1].getMethodName();
+		antecessor = Thread.currentThread().getStackTrace()[2].getMethodName();
+		try {
+			
+			SeleniumWait.waitElementClickable(element);
+			
+			
+			Assert.assertTrue(element.isDisplayed());
+			Reporter.addLog(Status.INFO, currentMethod + " -> " +element.getAttribute("id") +" successfully validated. ");
+			
+		} catch (Throwable e) {
+			Assert.fail("Test '" + antecessor + "' ended with ERROR - Method '" + currentMethod
+					+ "' Expected result element NOT present in page. \n<p>Stacktrace: "
+					+ e.getMessage());
+			e.printStackTrace();
+			
+		}
+	}
 	
 }

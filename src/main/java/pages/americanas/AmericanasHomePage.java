@@ -10,6 +10,7 @@ import selenium.SeleniumButton;
 import selenium.SeleniumNavigation;
 import selenium.SeleniumTextbox;
 
+
 public class AmericanasHomePage extends PageObjectInitialize {
 
 	// Ao extender a classe PageObjectInitialize, os elementos sao inicializados
@@ -26,42 +27,56 @@ public class AmericanasHomePage extends PageObjectInitialize {
 
 	@FindBy(id = "h_search-btn")
 	private WebElement btnFind;
+
+	@FindBy(id = "buy-button")
+	private WebElement btnConfirm;
 	
 	@FindBy(id = "btn-buy")
 	private WebElement btnBuy;
-	
+
 	@FindBy(xpath = "//div[@id='content-middle']/div[6]/div/div/div/div/div/div/div[2]/a/section/div[2]/div/h2")
 	public WebElement productList;
+
+	@FindBy(xpath = "//img[@alt='Ztw-30 mouse de computador sem fio bluetooth para macbook air macbook pro']")
+	public WebElement imgProduct;
+
+	@FindBy(id = "product-name-default")
+	public WebElement productDetails;
 	
-	
+	@FindBy(id = "fb-root")
+	public WebElement btnLoginFacebook;
 
 	// Metodos de iteração com a tela
-	
-	
+
 	public AmericanasHomePage goToHomePage() {
 		SeleniumNavigation.navigateToUrl(TestBase.urlBase);
 		return this;
 	}
+
 	public AmericanasHomePage setTextOnFindBar(String product) {
 		SeleniumTextbox.setText(txtFind, product);
 		return this;
 	}
 
 	public AmericanasHomePage clickOnButtonFind() {
+
 		SeleniumButton.clickButton(btnFind);
 		return this;
 	}
-	
+
 	public AmericanasHomePage selectProduct() {
-		SeleniumButton.clickButton(productList);
+
+		SeleniumButton.clickButton(imgProduct);
 		return this;
 	}
-	
+
 	public AmericanasHomePage clickOnButtonBuy() {
-		SeleniumButton.clickButton(btnFind);
+		SeleniumButton.clickButton(btnBuy);
 		return this;
 	}
-	
-	
+	public AmericanasHomePage clickOnButtonConfirmBuy() {
+		SeleniumButton.clickButton(btnConfirm);
+		return this;
+	}
 
 }

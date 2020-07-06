@@ -14,28 +14,32 @@ public class SUT001_AmericanasPurchaseListTests extends TestBase {
 		String product = "MACBOOK AIR";
 
 		new AmericanasHomePage(driver).goToHomePage().setTextOnFindBar(product).clickOnButtonFind();
-		
+
 		SeleniumAssert.assertElementContainsText(new AmericanasHomePage(driver).productList, product);
 
 	}
+
 	@Test(description = "Realizar uma busca na página principal e adicionar o produto ao carrinho.")
-	public void TC002_FindAndSelectProduct() {
-		
+	public void TC002_FindAndAddToCart() {
+
 		String product = "MACBOOK AIR";
-		
-		new AmericanasHomePage(driver).goToHomePage().setTextOnFindBar(product).clickOnButtonFind();
-		
-		SeleniumAssert.assertElementContainsText(new AmericanasHomePage(driver).productList, product);
-		
+
+		new AmericanasHomePage(driver).goToHomePage().setTextOnFindBar(product).clickOnButtonFind().selectProduct();
+
+		SeleniumAssert.assertElementContainsText(new AmericanasHomePage(driver).productDetails, product);
+
 	}
+
 	@Test(description = "Realizar uma busca na página principal, adicionar no carrinho e clicar em comprar.")
-	public void TC002_FindAndBuyProduct() {
-		
+	public void TC003_FindAndBuyProduct() {
+
 		String product = "MACBOOK AIR";
 		
-		new AmericanasHomePage(driver).goToHomePage().setTextOnFindBar(product).clickOnButtonFind();
 		
-		SeleniumAssert.assertElementContainsText(new AmericanasHomePage(driver).productList, product);
-		
+		new AmericanasHomePage(driver).goToHomePage().setTextOnFindBar(product).clickOnButtonFind().selectProduct()
+				.clickOnButtonBuy().clickOnButtonConfirmBuy();
+
+		SeleniumAssert.assertElementIsVisible(new AmericanasHomePage(driver).btnLoginFacebook);
+
 	}
 }
