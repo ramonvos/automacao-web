@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25940" started-at="2020-07-06T19:13:38Z" finished-at="2020-07-06T19:14:04Z">
+  <suite name="Suite" duration-ms="24197" started-at="2020-07-06T19:42:53Z" finished-at="2020-07-06T19:43:18Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25940" started-at="2020-07-06T19:13:38Z" finished-at="2020-07-06T19:14:04Z">
+    <test name="Test" duration-ms="24197" started-at="2020-07-06T19:42:53Z" finished-at="2020-07-06T19:43:18Z">
       <class name="tests.SUT001_AmericanasPurchaseListTests">
-        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="initializeDriver" is-config="true" duration-ms="4935" started-at="2020-07-06T19:13:33Z" finished-at="2020-07-06T19:13:38Z">
+        <test-method status="PASS" signature="initializeDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="initializeDriver" is-config="true" duration-ms="5020" started-at="2020-07-06T19:42:48Z" finished-at="2020-07-06T19:42:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2020-07-06T19:13:38Z" finished-at="2020-07-06T19:13:38Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="beforeMethod" is-config="true" duration-ms="9" started-at="2020-07-06T19:42:53Z" finished-at="2020-07-06T19:42:53Z">
           <params>
             <param index="0">
               <value>
@@ -20,22 +20,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@503d56b5]]>
+                <![CDATA[org.testng.TestRunner@7cd1ac19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC001_FindProduct" duration-ms="6619" started-at="2020-07-06T19:13:38Z" description="Realizar uma busca na página principal e verificar se foi exibido o produto informando." finished-at="2020-07-06T19:13:44Z">
+        <test-method status="PASS" signature="TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="TC001_FindProduct" duration-ms="5987" started-at="2020-07-06T19:42:53Z" description="Realizar uma busca na página principal e verificar se foi exibido o produto informando." finished-at="2020-07-06T19:42:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC001_FindProduct -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="661" started-at="2020-07-06T19:13:44Z" finished-at="2020-07-06T19:13:45Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="afterMethod" is-config="true" duration-ms="1413" started-at="2020-07-06T19:42:59Z" finished-at="2020-07-06T19:43:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC001_FindProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+                <![CDATA[[TestResult name=TC001_FindProduct status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC001_FindProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-06T19:13:45Z" finished-at="2020-07-06T19:13:45Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-06T19:43:01Z" finished-at="2020-07-06T19:43:01Z">
           <params>
             <param index="0">
               <value>
@@ -56,22 +56,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@503d56b5]]>
+                <![CDATA[org.testng.TestRunner@7cd1ac19]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="TC002_FindAndAddToCart()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC002_FindAndAddToCart" duration-ms="8751" started-at="2020-07-06T19:13:45Z" description="Realizar uma busca na página principal e adicionar o produto ao carrinho." finished-at="2020-07-06T19:13:54Z">
+        <test-method status="PASS" signature="TC002_FindAndAddToCart()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="TC002_FindAndAddToCart" duration-ms="8370" started-at="2020-07-06T19:43:01Z" description="Realizar uma busca na página principal e adicionar o produto ao carrinho." finished-at="2020-07-06T19:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC002_FindAndAddToCart -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="426" started-at="2020-07-06T19:13:54Z" finished-at="2020-07-06T19:13:54Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="afterMethod" is-config="true" duration-ms="337" started-at="2020-07-06T19:43:09Z" finished-at="2020-07-06T19:43:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC002_FindAndAddToCart status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC002_FindAndAddToCart()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+                <![CDATA[[TestResult name=TC002_FindAndAddToCart status=SUCCESS method=SUT001_AmericanasPurchaseListTests.TC002_FindAndAddToCart()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -83,43 +83,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-07-06T19:13:54Z" finished-at="2020-07-06T19:13:54Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC003_FindAndBuyProduct()]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@503d56b5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="TC003_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="TC003_FindAndBuyProduct" duration-ms="9108" started-at="2020-07-06T19:13:54Z" description="Realizar uma busca na página principal, adicionar no carrinho e clicar em comprar." finished-at="2020-07-06T19:14:03Z">
+        <test-method status="FAIL" signature="TC003_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="TC003_FindAndBuyProduct" duration-ms="7710" started-at="2020-07-06T19:43:10Z" description="Realizar uma busca na página principal, adicionar no carrinho e clicar em comprar." finished-at="2020-07-06T19:43:17Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Test 'clickOnButtonBuy' ended with ERROR - Method 'clickButton' Expected result message:  not present in element. 
-<p>Stacktrace: element click intercepted: Element is not clickable at point (1124, 652)
+<p>Stacktrace: element click intercepted: Element is not clickable at point (1124, 654)
   (Session info: chrome=83.0.4103.61)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: '07HW011868', ip: '10.90.70.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\1680395\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 840d88b32c5cd3b6cad47eb66bee30a5]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\1680395\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 573759e885ec4682a57adb6af6d8c2a2]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: Test 'clickOnButtonBuy' ended with ERROR - Method 'clickButton' Expected result message:  not present in element. 
-<p>Stacktrace: element click intercepted: Element is not clickable at point (1124, 652)
+<p>Stacktrace: element click intercepted: Element is not clickable at point (1124, 654)
   (Session info: chrome=83.0.4103.61)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: '07HW011868', ip: '10.90.70.89', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\1680395\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:57400}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 840d88b32c5cd3b6cad47eb66bee30a5
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.61, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\1680395\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:62500}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 573759e885ec4682a57adb6af6d8c2a2
 at org.testng.Assert.fail(Assert.java:96)
 at selenium.SeleniumButton.clickButton(SeleniumButton.java:28)
 at pages.americanas.AmericanasHomePage.clickOnButtonBuy(AmericanasHomePage.java:74)
@@ -155,11 +139,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC003_FindAndBuyProduct -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="afterMethod" is-config="true" duration-ms="347" started-at="2020-07-06T19:14:03Z" finished-at="2020-07-06T19:14:04Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-07-06T19:43:10Z" finished-at="2020-07-06T19:43:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TC003_FindAndBuyProduct status=FAILURE method=SUT001_AmericanasPurchaseListTests.TC003_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19] output={null}]]]>
+                <![CDATA[public void tests.SUT001_AmericanasPurchaseListTests.TC003_FindAndBuyProduct()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@7cd1ac19]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult, java.lang.reflect.Method)[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="afterMethod" is-config="true" duration-ms="340" started-at="2020-07-06T19:43:17Z" finished-at="2020-07-06T19:43:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC003_FindAndBuyProduct status=FAILURE method=SUT001_AmericanasPurchaseListTests.TC003_FindAndBuyProduct()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf] output={null}]]]>
               </value>
             </param>
             <param index="1">
@@ -171,7 +171,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@7d9d1a19]" name="quitDriver" is-config="true" duration-ms="806" started-at="2020-07-06T19:14:04Z" finished-at="2020-07-06T19:14:04Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:tests.SUT001_AmericanasPurchaseListTests@5622fdf]" name="quitDriver" is-config="true" duration-ms="782" started-at="2020-07-06T19:43:18Z" finished-at="2020-07-06T19:43:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
