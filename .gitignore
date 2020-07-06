@@ -1,4 +1,9 @@
 target/
+/test-output/
+/.metadata/
+/.settings/
+.project
+.classpath
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
