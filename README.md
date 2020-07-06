@@ -25,19 +25,19 @@
 ## HOW TO RUN 
 
 
-	Clone projet:
-	```
-	git clone https://github.com/ramonvos/automacao-web.git
-	```
+Clone projet:
+```
+git clone https://github.com/ramonvos/automacao-web.git
+```
 
-	In Command Prompt type:
-	```
-	cd [user-dir]\automacao-web
-	mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
-	```
+In Command Prompt type:
+```
+cd [user-dir]\automacao-web
+mvn clean test -Dsurefire.suiteXmlFiles=testng.xml
+```
 
 
-	> **Note:** The **Logger html file** is saved in the folder [user-dir]\automacao-web\report.
+> **Note:** The **Logger html file** is saved in the folder [user-dir]\automacao-web\report.
 
 
 ## Log example (Extent Reports)
