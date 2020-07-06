@@ -9,17 +9,17 @@
 
 	.
 	├── ...
-	├── src/main/java                    #Selenium project configuration
-	│   ├── base              			 # Selenium TestBase setup project
-	│   ├── constants              		 # Constants file
-	│   ├── drivers                      # Selenium drivers - browsers
-	│   ├── enums                        # Enumeration file
-	│   ├── logger                       # Reporter .html file configuration
-	│   ├── pages            			 # Page Object mapping and navigation methods
-	│   ├── selenium            		 # Selenium get and set methods
-	│   └── utilities  					 # Project and Generic helpers	
-	├── src/test/java                    # Selenium Automated Tests Cases
-	│   ├── tests             			 # Automated Tests
+	├── src/main/java  #Selenium project configuration
+	│   ├── base       #Selenium TestBase setup project
+	│   ├── constants  #Constants file
+	│   ├── drivers    # Selenium drivers - browsers
+	│   ├── enums      # Enumeration file
+	│   ├── logger     # Reporter .html file configuration
+	│   ├── pages      # Page Object mapping and navigation methods
+	│   ├── selenium   # Selenium get and set methods
+	│   └── utilities  # Project and Generic helpers	
+	├── src/test/java  # Selenium Automated Tests Cases
+	│   ├── tests      # Automated Tests
 	└── ...
 
 	## HOW TO RUN 
@@ -41,5 +41,7 @@
 
 	## Log example (Extent Reports)
 	
-	 ![Reporter](https://i.imgur.com/m6il5ne.png)
+	 
+Reporter 
+![Image](https://i.imgur.com/m6il5ne.png)
 
